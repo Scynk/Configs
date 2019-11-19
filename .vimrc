@@ -14,7 +14,7 @@
     syntax on
 
 "Ustaw motyw kolorow
-    colo gruvbox
+    "colo gruvbox
 
 "Dostosuj kolory do terminala z czarnym tlem
     set background=dark
