@@ -15,20 +15,20 @@
 "Wlacz kolorowanie skladni
     syntax on
 
+"Dostosuj kolory do terminala z czarnym tlem
+    set background=dark
+
 "Ustaw motyw kolorow (:colo wyświetla obecny)
 "Ciekawe: gruvbox, molokai, jellybeans, codeschool, darkspace
 "Szczególnie polecane: torte, candy, guardian2
     colo torte
-
-"Dostosuj kolory do terminala z czarnym tlem
-    set background=dark
 
 "Ustaw czcionke (:set guifont? wyświetla obecną)
 "Ciekawe: Menlo, Monoid, Hack, InputMono
 "Przy czcionce koniecznie sprawdź polskie znaki! ąęćżźółń
     set guifont=InputMono:h11
 
-"Szukaj inkrementalnie, bez rozrozniania wielkosci znakow, inteligentnie i podswietl wyniki
+"Szukaj inkrementalnie, bez rozrozniania wielkosci znakow, ale inteligentnie i podswietl wyniki
     set incsearch
     set ignorecase
     set smartcase
@@ -51,7 +51,7 @@
 "Pozwol na przelaczanie niezapisanych buforwo
     set hidden
 
-"Komenda split otwiera nowe okno na dole lub po prawej
+"Komenda hsplit otwiera nowe okno na dole, a vsplit po prawej
     set splitbelow splitright
 
 "Liczby z wiodacymi zerami traktuj jak dziesietne a nie osemkowe (!)
@@ -79,6 +79,12 @@
 
 "Automatycznie usun wszystkie biale znaki na koncu linii przy zapisywaniu
     autocmd BufWritePre * %s/\s\+$//e
+
+" Zapisz z sudo
+    command W w !sudo tee % > /dev/null
+
+" Zamien tabulatory na 4 spacje
+    command Tabtospaces :%s/\t/    /g
 
 " - - - - - - - - - - - - - - - - - - - -
 "Ustawienia mapowania klawiszy
@@ -113,17 +119,10 @@
 "Smile :)
     map <F2> :smile <cr>
 
-" Do nagrywania
-"map <F3> :AutoType E:\Workspace\ATB_Programy\Pierwszy\Main.c <cr>
-":let g:autotype_speed = 30
-
 " Linia pod komentarzem nie jest komentarzem
     set formatoptions-=ro
     setlocal formatoptions-=c formatoptions-=r formatoptions-=o
     autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-
-    " Zapisz z sudo
-    command W w !sudo tee % > /dev/null
 
 " - - - - - - - - - - - - - - - - - - - -
 " Ustawienia pluginów
@@ -141,4 +140,4 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'rafi/awesome-vim-colorschemes'
 
 call plug#end()
-" t - - - - - - - - - - - - - - - - - - -
+" - - - - - - - - - - - - - - - - - - -
