@@ -128,7 +128,8 @@
 " - - - - - - - - - - - - - - - - - - - -
 " Ustawienia pluginów
 " - - - - - - - - - - - - - - - - - - - -
-call plug#begin('E:\Program Files (x86)\Vim\vim82\plugged')
+call plug#begin('~/.vim/plugged')
+"call plug#begin('E:\Program Files (x86)\Vim\vim82\plugged')
 
 Plug 'gu-fan/autotype.vim'
 Plug 'dhruvasagar/vim-table-mode'
