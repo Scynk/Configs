@@ -103,8 +103,8 @@
 "Przypisanie klawiszy do kompilacji LaTeX
     map <F5> :!pdflatex % <cr>
     map <F6> :!pdflatex --quiet % <cr>
-    map <F7> :!pdflatex Main.tex <cr>
-    map <F8> :!pdflatex Main.tex --quiet <cr>
+    map <F7> :w <cr> :!pdflatex Main.tex <cr>
+    map <F8> :w <cr> :!pdflatex Main.tex --quiet <cr>
 
 "Przypisanie klawiszy do kompilacji i programowania mikrokontrolera
     map <F9> :!make <cr>
@@ -127,8 +127,8 @@
 " - - - - - - - - - - - - - - - - - - - -
 " Ustawienia pluginów
 " - - - - - - - - - - - - - - - - - - - -
-call plug#begin('~/.vim/plugged')
-"call plug#begin('E:\Program Files (x86)\Vim\vim82\plugged')
+"call plug#begin('~/.vim/plugged')
+call plug#begin('E:\Program Files (x86)\Vim\vim82\plugged')
 
 Plug 'gu-fan/autotype.vim'
 Plug 'dhruvasagar/vim-table-mode'
@@ -138,6 +138,7 @@ Plug 'itchyny/lightline.vim'
 set laststatus=2
 Plug 'terryma/vim-multiple-cursors'
 Plug 'rafi/awesome-vim-colorschemes'
+Plug 'qpkorr/vim-renamer'
 
 call plug#end()
 " - - - - - - - - - - - - - - - - - - -
