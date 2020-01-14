@@ -1,0 +1,4 @@
+# Aliasy tylko dla Raspberry PI
+alias tmux='tmux -u'
+alias temp='vcgencmd measure_temp'
+alias tempw='watch vcgencmd measure_temp'
