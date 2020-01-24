@@ -34,8 +34,14 @@
     set smartcase
     set hlsearch
 
-"Wlacz tryb Magic dla wyrazen regularnych
-    set magic
+"Wlacz tryb Very Magic dla wyrazen regularnych
+"Natywnie vim nie posiada takiej opcji
+    nnoremap / /\v
+    vnoremap / /\v
+    cnoremap %s/ %smagic/
+    cnoremap \>s/ \>smagic/
+    nnoremap :g/ :g/\v
+    nnoremap :g// :g//
 
 "Podswietlaj odpowiadajace nawiasy, kiedy kursor jest na nich
     set showmatch
