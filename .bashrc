@@ -1,4 +1,4 @@
-# Zmienne srodowiskowe
+# Zmienne
 export EDITOR=vim
 
 # Aliasy

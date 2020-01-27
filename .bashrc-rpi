@@ -1,3 +1,6 @@
+# Zmienne tylko dla Raspberry PI
+export PATH=$PATH:/home/pi/Skrypty
+
 # Aliasy tylko dla Raspberry PI
 alias tmux='tmux -u'
 alias temp='vcgencmd measure_temp'
