@@ -1,5 +1,6 @@
 # Zmienne
-export EDITOR=vim
+export VISUAL="vim"
+export EDITOR="$VISUAL"
 
 # Aliasy
 alias ll='ls -la --color=auto'
