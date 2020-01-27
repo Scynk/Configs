@@ -25,3 +25,6 @@ fi
 
 # Przeładowanie pliku .bashrc
 source ~/.bashrc
+
+# Przeładowanie pliku .tmux.conf
+tmux source-file ~/.tmux.conf
