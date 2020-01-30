@@ -27,4 +27,6 @@ fi
 source ~/.bashrc
 
 # Przeładowanie pliku .tmux.conf
-tmux source-file ~/.tmux.conf
+if tmux info &> /dev/null; then
+    tmux source-file ~/.tmux.conf
+fi
