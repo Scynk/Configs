@@ -21,7 +21,7 @@
 "Ustaw motyw kolorow (:colo wyświetla obecny)
 "Ciekawe: gruvbox, molokai, jellybeans, codeschool, darkspace
 "Szczególnie polecane: torte, candy, guardian2
-    colo torte
+    colo candy
 
 "Ustaw czcionke (:set guifont? wyświetla obecną)
 "Ciekawe: Menlo, Monoid, Hack, InputMono
