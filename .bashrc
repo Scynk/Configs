@@ -8,7 +8,7 @@ parse_git_branch() {
 }
 
 # Zmienne
-export PS1="\n\[\e[33m\]\u \[\e[31m\]\h\[\e[m\] \[\e[36m\]\w\[\e[m\] \[\e[32m\]\`parse_git_branch\`\[\e[m\] \n\\$ "
+export PS1="\n\[\e[33m\]\u \[\e[31m\]\h\[\e[m\] \[\e[36m\]\w\[\e[m\] \[\e[32m\]\`parse_git_branch\`\[\e[97m\] \n\\$ "
 export VISUAL="vim"
 export EDITOR="$VISUAL"
 export HISTCONTROL=ignorespace
