@@ -14,11 +14,10 @@ export EDITOR="$VISUAL"
 export HISTCONTROL=ignorespace
 
 # Aliasy
+alias ls='ls --color=auto'
 alias ll='ls -la --color=auto'
 alias grep='grep --color=auto'
 alias srcbash='source ~/.bashrc'
-alias enters='while read line; do printf "\e[0;32m$line\n\n"; read line && printf "\e[0;33m$line\n\n" ; done'
-alias :q='logout'
 alias gits='git status'
 alias gitl='git log --oneline --all'
 alias tmux='tmux -u'
@@ -29,3 +28,4 @@ alias ss='sudo systemctl status'
 alias st='sudo systemctl start'
 alias sp='sudo systemctl stop'
 alias sr='sudo systemctl restart'
+alias p='sudo pacman'
